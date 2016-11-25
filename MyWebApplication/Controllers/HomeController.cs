@@ -31,5 +31,10 @@ namespace MyWebApplication.Controllers
             ViewBag.Message = "My Progressbar.";
             return View();
         }
+        public ActionResult NewBranch()
+        {
+            ViewBag.Message = "New Branch";
+            return View();
+        }
     }
 }
