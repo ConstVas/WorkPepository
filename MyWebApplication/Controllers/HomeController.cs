@@ -36,5 +36,10 @@ namespace MyWebApplication.Controllers
             ViewBag.Message = "New Branch";
             return View();
         }
+        public ActionResult Path()
+        {
+            ViewBag.Message = "Path";
+            return View();
+        }
     }
 }
