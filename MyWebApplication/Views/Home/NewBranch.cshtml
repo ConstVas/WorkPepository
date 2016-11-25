@@ -2,6 +2,13 @@
 @{
     ViewBag.Title = "NewBranch";
 }
-
+<link href="~/Content/css/svg.css" rel="stylesheet" />
 <h2>NewBranch</h2>
-<p>String on new branch</p>
+<p>My Svg</p>
+<div id="svg" > 
+    <script>
+        d3.select("#svg").append("svg").style("position", "absolute").append("rect").attr("width", 30).attr("height", 30).style("fill", "red");
+        d3.select("#svg").append("svg").append('line').attr('x1', 15).attr('y1', 15).attr('x2', 65).attr('y2', 15);
+        d3.select("#svg").append("svg").append("rect").attr("width", 30).attr("height", 30).style("fill", "blue");
+    </script>
+</div>
