@@ -6,9 +6,12 @@
     height:200px;
      width:400px; 
 }
-svg {
+/*svg {
     height:50px;
     width:50px;
-    
-    
+}*/
+div path{
+    stroke: #ff0000;
+    fill: none;
+    stroke-width: 2;
 }

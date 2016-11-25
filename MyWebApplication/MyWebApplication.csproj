@@ -243,6 +243,7 @@
     <Content Include="Scripts\AngularJs\salaryApp.js" />
     <Content Include="Scripts\AngularJs\salaryAppModules.js" />
     <Content Include="Scripts\d3lib\d3.v3.js" />
+    <Content Include="Scripts\pathSvg.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
