@@ -41,5 +41,10 @@ namespace MyWebApplication.Controllers
             ViewBag.Message = "Path";
             return View();
         }
+        public ActionResult Transform()
+        {
+            ViewBag.Message = "Transform";
+            return View();
+        }
     }
 }

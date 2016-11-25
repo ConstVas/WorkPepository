@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Transform";
+}
+
+<h2>Transform</h2>
+
+<div id="trans">
+
+</div>
+<script>
+    var width = 1100,
+        height = 400;
+    var svg = d3.select("#trans").append("svg");
+
+    svg.attr("height", height)
+        .attr("width", width);
+    // оригинальный круг    
+    svg.append("circle")
+        .style("fill", "none")
+        .style("stroke", "steelblue")
+        .style("stroke-width", "2")
+        .attr("cx", 100)
+        .attr("cy", 100)
+        .attr("r", 50);
+    // круг с перемещением
+    var svgCircl = svg.append("circle")
+        .style("fill", "none")
+        .style("stroke", "red")
+        .style("stroke-width", "2")
+        .attr("transform", "translate(50, 40)")
+        .attr("cx", 100)
+        .attr("cy", 100)
+        .attr("r", 50);
+    //for (i = 0; i < 800; i++) {
+        var i = 0;
+        while (i < 800) {
+           
+                svgCircl.attr("transform", "translate(" + i++ + ", 40)");
+             
+                svgCircl.attr("transform", "translate(" + i-750 + ", 40)");
+             
+
+        }
+    //}
+</script>
