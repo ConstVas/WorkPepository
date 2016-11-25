@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "ProgressBar";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3> 
+<div ng-app="loaderApp" layout="column" ng-cloak="" ng-controller="AppCtrl">
+    <div id="loadingSpinner2" class="progressCirculardemoBasicUsage">
+
+        <md-content layout-padding="">
+            <div>
+                <div style="position:absolute;" layout="row" layout-sm="column" layout-align="space-around">
+                    <md-progress-circular md-diameter="50px" md-mode="determinate" value="{{determinateValue}}"></md-progress-circular>
+                </div>
+                <div style="position:absolute; padding-top:5px; padding-left:5px" layout="row" layout-sm="column" layout-align="space-around">
+                    <md-progress-circular md-diameter="40px" md-mode="determinate" value="{{determinateValue + 2}}"></md-progress-circular>
+                </div>
+                <div style="padding-top:10px; padding-left:10px" layout="row" layout-sm="column" layout-align="space-around">
+                    <md-progress-circular md-diameter="30px" md-mode="determinate" value="{{determinateValue + 5}}"></md-progress-circular>
+                </div>
+            </div>
+        </md-content>
+    </div>
+</div>
+
