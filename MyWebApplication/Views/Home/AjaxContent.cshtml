@@ -7,6 +7,7 @@
 
 <div>
     <h3>Распродажа книг</h3>
+    <p><a href="/Home/Create">Добавить книгу</a></p>
     <table>
         <tr class="header">
             <td><p>Название книги</p></td>
@@ -22,6 +23,7 @@
                 <td><p>@b.Price</p></td>
                 <td><p><a href="/Home/BookView/@b.Id">Купить</a></p></td>
                 <td><p><a href="/Home/EditBook/@b.Id">Редактировать</a></p></td>
+                <td><p><a href="/Home/Delete/@b.Id">Удалить</a></p></td>
             </tr>
         }
     </table>
