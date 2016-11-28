@@ -46,5 +46,11 @@ namespace MyWebApplication.Controllers
             ViewBag.Message = "Transform";
             return View();
         }
+       public ActionResult AjaxContent()
+        {
+            ViewBag.Message = "Ajax";
+            return View();
+        }
+        
     }
 }
