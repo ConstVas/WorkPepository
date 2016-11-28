@@ -1,0 +1,20 @@
+﻿@model MyWebApplication.Models.ChatModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <div id="Useranme"></div>
+    <div id="LastRefresh"></div>
+    <div id="container">
+        <div id="loginBlock">
+            Введите имя:
+            <input type="text" id="txtUserName" />
+            <button id="btnLogin" value="Войти">Войти</button>
+        </div>
+    </div>
+    <div id="Error"></div>
+    @Ajax.ActionLink("Login", "ChatModel", new { user = "" },
+        new AjaxOptions { UpdateTargetId = "container", OnFailure = "LoginOnFailure", OnSuccess = "LoginOnSuccess" },
+        new { @id = "LoginButton", @style = "visibility: hidden;" })
+    @Scripts.Render("~/Scripts/chat.js")
+</div>

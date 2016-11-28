@@ -17,6 +17,7 @@ namespace MyWebApplication
                        "~/Scripts/AngularJs/angular-aria.min.js",
                        "~/Scripts/AngularJs/svg-assets-cache.js",
                        "~/Scripts/d3lib/d3.v3.js",
+                       "~/Scripts/chat.js",
                        "~/Scripts/app/loader/controller/loaderController.js"
                        ));
              
