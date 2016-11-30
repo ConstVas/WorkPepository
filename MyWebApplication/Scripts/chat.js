@@ -24,7 +24,7 @@ function LoginOnSuccess(result) {
     $("#btnMessage").click(function () {
         var text = $("#txtMessage").val();
         if (text) {
-            var href = "/Home?user=" + encodeURIComponent($("Username").text());
+            var href = "/Home/ChatModel?user=" + encodeURIComponent($("Username").text());
             href = href + "&chatMessage="+ encodeURIComponent(text);
             $("#ActionLink").attr("href", href).click();
              
@@ -32,19 +32,19 @@ function LoginOnSuccess(result) {
     });
     $("#btnLogOff").click(function () {
          
-            var href = "/Home?user=" + encodeURIComponent($("Username").text());
+        var href = "/Home/ChatModel?user=" + encodeURIComponent($("Username").text());
             href = href + "&logOff=true";
-            $("#ActionLink").attr("href", href).click();
-            document.location.href = "Home";
+            $('#ActionLink').attr("href", href).click();
+            document.location.href = "ChatModel";
     });
 }
 function LoginOnFailure(result) {
-    $("#Username").val();
+    $("#Username").val("");
     $("#Error").text(result.responseText);
     setTimeout("$('#Error').empty();", 2000);
 }
 function Refresh() {
-    var href = "/Home?user=" + encodeURIComponent($("#Username").text());
+    var href = "/Home/ChatModel?user=" + encodeURIComponent($("#Username").text());
     $("#ActionLink").attr("href", href).click();
     setTimeout("Refresh();", 5000);
 }

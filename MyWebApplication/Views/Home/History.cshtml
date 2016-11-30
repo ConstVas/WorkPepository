@@ -7,19 +7,21 @@
 <p>@user.Name</p>
     }
 </div>
-<div id="Messages">
-    @foreach(ChatMessage msg in Model.Messages)
-    {
-        <p>
-            @msg.Date<br/>
-            @if(msg.User != null)
-            {
-                <b>@(msg.User.Name + ":")</b> @msg.Text
-            }
-            else
-            {
-                <span class="serverMes">@msg.Text</span>
-            }
-        </p>
-    }
-</div>
+<textarea id="Messages" >
+     
+        @foreach (ChatMessage msg in Model.Messages)
+        {
+            
+                @msg.Date 
+                 if (msg.User != null)
+                {
+                     @(msg.User.Name + ":")  @msg.Text
+                }
+                else
+                {
+                      @msg.Text 
+                }
+           
+        }
+     
+</textarea>

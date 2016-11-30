@@ -35,9 +35,9 @@ namespace MyWebApplication.Controllers
             ViewBag.Message = "My Progressbar.";
             return View();
         }
-        public ActionResult NewBranch()
+        public ActionResult D3lib()
         {
-            ViewBag.Message = "New Branch";
+            ViewBag.Message = "D3lib";
             return View();
         }
         public ActionResult Path()
@@ -114,7 +114,11 @@ namespace MyWebApplication.Controllers
             db.SaveChanges();
             return RedirectToAction("AjaxContent");
         }
-        
+        public ActionResult W2UIDemos()
+        {
+            ViewBag.Message = "W2UIDemos";
+            return View();
+        }
         public ActionResult ChatModel(string user, bool? logOn, bool? logOff, string chatMessage)
         {
             try
@@ -199,6 +203,11 @@ namespace MyWebApplication.Controllers
                 Date = DateTime.Now
             });
         }
-        
+        public PartialViewResult TextPartialPage()
+        {
+            return PartialView();
+        }
+
+
     }
 }
