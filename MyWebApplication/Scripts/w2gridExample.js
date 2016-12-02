@@ -1,12 +1,18 @@
 ﻿$(function () {
     $('#grid').w2grid({
         name: 'grid',
+        header: 'MyTable',
         show: {
             footer: true,
             lineNumbers: true,
-            selectColumn: true
+            selectColumn: true,
+            header: true,
+            toolbar: true,
+            expandColumn: true,
         },
-        reorderColumns: true,
+        reorderColumns: true,onExpand: function (event) {
+            $('#'+event.box_id).html('<div style="padding: 10px; height: 100px">Expanded content</div>');
+        },
         columns: [
             { field: 'recid', caption: 'Rec. Id', size: '100%', resizable: true, hidden: true },
             {

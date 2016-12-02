@@ -19,8 +19,7 @@ namespace MyWebApplication
                        "~/Scripts/d3lib/d3.v3.js",
                        "~/Scripts/chat.js",
                        "~/Scripts/app/loader/controller/loaderController.js",
-                       "~/Scripts/w2ui-1.5.rc1.js",
-                       "~/Scripts/w2gridExample.js"
+                       "~/Scripts/w2ui-1.5.rc1.js"
                        ));
              
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
