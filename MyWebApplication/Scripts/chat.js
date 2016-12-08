@@ -54,7 +54,7 @@ function ChatOnFailure(result) {
 }
 function ChatOnSuccess(result) {
     Scroll();
-    Showlastrefresh();
+    ShowLastRefresh();
 }
 function Scroll() {
     var win = $('#Messages');
