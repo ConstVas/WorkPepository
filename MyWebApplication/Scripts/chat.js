@@ -24,7 +24,7 @@ function LoginOnSuccess(result) {
     $("#btnMessage").click(function () {
         var text = $("#txtMessage").val();
         if (text) {
-            var href = "/Home/ChatModel?user=" + encodeURIComponent($("Username").text());
+            var href = "/Home/ChatModel?user=" + encodeURIComponent($("#Username").text());
             href = href + "&chatMessage="+ encodeURIComponent(text);
             $("#ActionLink").attr("href", href).click();
              
@@ -32,7 +32,7 @@ function LoginOnSuccess(result) {
     });
     $("#btnLogOff").click(function () {
          
-        var href = "/Home/ChatModel?user=" + encodeURIComponent($("Username").text());
+        var href = "/Home/ChatModel?user=" + encodeURIComponent($("#Username").text());
             href = href + "&logOff=true";
             $('#ActionLink').attr("href", href).click();
             document.location.href = "ChatModel";
